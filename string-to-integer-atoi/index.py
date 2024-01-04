@@ -17,3 +17,5 @@ class Solution:
         val = int(signed + number)
         INT_MIN, INT_MAX = -2**31, 2**31 - 1
         return max(min(val, INT_MAX), INT_MIN)
+solution = Solution()
+print(solution.myAtoi('42'))
