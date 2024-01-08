@@ -18,6 +18,7 @@ class Solution:
                     index += 1
             column += 2
         result = ''.join([''.join(row) for row in var])
+        print(var)
         return result
 
 # Example usage:
