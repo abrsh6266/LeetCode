@@ -47,4 +47,4 @@ class Solution:
                         return False
         return stack.is_empty()
 solution = Solution()
-print(solution.isValid('()') )
+print(solution.isValid('()'))
