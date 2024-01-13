@@ -10,8 +10,15 @@ class Solution:
         dividend = abs(dividend)
         divisor = abs(divisor)
         quotient = 0
+        temp, multiple = divisor, 1
         while dividend >= divisor:
-            dividend -= divisor
-            quotient += 1
+            if dividend >= temp:
+                dividend -= temp
+                quotient += multiple
+                temp <<= 1
+                multiple <<= 1
+            else:
+                temp >>= 1
+                multiple >>= 1
         result = sign * quotient
         return min(max(result, INT_MIN), INT_MAX)
