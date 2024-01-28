@@ -9,4 +9,7 @@ class Solution:
                 return x * my(x,n-1)
         return my(x,n)
 solution = Solution()
+
+
+
 print(solution.myPow(2,10))
